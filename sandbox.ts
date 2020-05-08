@@ -1,3 +1,4 @@
+/*
 const character = 'luigi';
 console.log(character);
 
@@ -7,6 +8,7 @@ console.log(inputs);
 inputs.forEach(input => {
     console.log(input);
 });
+*/
 
 //tsc stands for typescript compiler.
 /* tsc sandbox.ts sandbox.js would sompile the sandbox.ts to 
@@ -22,3 +24,31 @@ tsc sandbox.ts -w
 
 
 */
+
+let character = 'mario';
+let age = 30;
+let isBlackBelt = false;
+
+//character = 20; wouldn't work
+character = 'luigi';
+
+//age = 'yoshi'; wouldn't work
+age = 40;
+
+//isBlackBelt = 'yes'; wouldn't work 
+isBlackBelt = true;
+
+//We can require specific data types as shown below.
+const circ = (diameter: number) => diameter*Math.PI;
+
+//console.log(circ('hello')); wouldn't work as it's not being passed a number.
+
+console.log(circ(7.5));
+
+
+
+
+
+
+
+
